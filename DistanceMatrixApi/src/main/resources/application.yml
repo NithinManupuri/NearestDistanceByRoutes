@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: DistanceMatrixApi
+  datasource:
+    username: root
+    password: ****
+    url: jdbc:mysql://localhost:3306/distanceMatrixDb
+  jpa:
+   hibernate:
+     ddl-auto: update
+   show-sql: true

@@ -1,0 +1,14 @@
+package in.spring.dto;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Data;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+public class DistanceMatrixValue {
+  
+	
+	private String text;
+    private int value;
+}
