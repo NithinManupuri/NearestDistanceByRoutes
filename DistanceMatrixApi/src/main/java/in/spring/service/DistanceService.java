@@ -22,7 +22,7 @@ public class DistanceService {
 	
 	public ApiResponse  getNearestUser(String address) {
 		List<User> listOfUsers = repo.findAll();
-		String apiKey="AIzaSyBeOlNL4a2Y9WoNVi9pVkbtQ9y0KpCITWM";
+		String apiKey="****************************";
 	    ApiResponse res=new ApiResponse();
 	    String origins=listOfUsers.stream().map(user -> user.getAddress()+ ","+user.getArea()+","+user.getPincode()).collect(Collectors.joining("|"));
 		
